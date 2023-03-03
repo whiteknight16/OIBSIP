@@ -83,10 +83,13 @@ nav{
 .row{
     padding-left: 3vw;
     margin-top: 2vh;
+
 }
 
 .card{
     max-width: fit-content;
+    background-color: #21325e;
+    color: #f0f0f0;
 }
 
 /* About Us */
