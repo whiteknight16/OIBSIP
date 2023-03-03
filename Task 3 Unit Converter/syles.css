@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(23, 22, 22);
+    margin-top: 10vh;
+}
+
+h1 {
+    color: #f0f0f0;
+
+    font-size: 6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-flow: column;
+
+    font-family: Montserrat;
+
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+
+    margin-top: 5vh;
+
+    border-radius: 0.5%;
+
+    font-family: Montserrat;
+
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    margin-top: 2vh;
+    gap: 3vh;
+}
+
+select {
+    size: 10em;
+}
+
+.inputTemp {
+    height: 5vh;
+    width: 20vw;
+    background-color: #f0f0f0;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: Montserrat;
+    font-size: 1em;
+
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-family: Montserrat;
+    font-size: 1em;
+
+}
+
+.convertedTemp {
+    background-color: #f0f0f0;
+    height: 5vh;
+    width: 20vw;
+    font-family: Montserrat;
+    font-size: 1em;
+
+}
+
+.main{
+    border-style:dashed;
+    border-color: #f0f0f0;
+    border: 3px;
+}
+
+.butt {
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color:#ffc477;
+	border-radius:11px;
+	border:2px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:8px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc9f52;
+}
+.butt:hover {
+	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	background-color:#fb9e25;
+}
+.butt:active {
+	position:relative;
+	top:1px;
+}
+
+select {
+    background-color: #f0f0f0;
+
+    appearance: none;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width:20%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+  }
+  
+/* Optimising */
+@media only screen and (max-width: 425px){
+	h1{
+        font-size: 2.5em;
+    }
+    select{
+        font-size: 1em;
+        width: 30%;
+    }
+    .convertedTemp,.inputTemp{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+	h1{
+        font-size: 3.75em;
+    }
+    select{
+        font-size: 1em;
+        width: 30%;
+    }
+    .convertedTemp,.inputTemp{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+	h1{
+        font-size: 3.75em;
+    }
+    select{
+        font-size: 1.5em;
+        width: 30%;
+    }
+    .convertedTemp,.inputTemp{
+        width: 70%;
+        font-size: 1.5em;
+    }
+}
+

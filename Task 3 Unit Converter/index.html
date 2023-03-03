@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./syles.css">
+
+    <!-- External Js -->
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <h1>Temperature Convertor</h1>
+    <div class="select">
+    <select name="temperature" id="ip">
+        <option value="c">Celcius</option>
+        <option value="f">Fahrenheit</option>
+        <option value="k">Kelvin</option>
+    </select>
+
+    <select name="temperature" id="op">
+        <option value="f">Fahrenheit</option>
+        <option value="c">Celcius</option>
+        <option value="k">Kelvin</option>
+    </select>
+    </div>
+
+    <form onsubmit="return false">
+        <input type="number" class="inputTemp" step=".0001"  placeholder="Enter the temperature" required>
+        <div class="convertedTemp">Converted Temperature</div>
+        <button type="submit" id="convert" class="butt">Convert</button>
+    </form>
+</body>
+
+</html>
