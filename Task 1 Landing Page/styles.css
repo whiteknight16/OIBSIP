@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #3e497a;
+    overflow-x:hidden !important;
+}
+/* Nav CSS */
+nav{
+    background-color:#21325e ;
+    width: 100vw;
+}
+
+.nav-link{
+    color: #f0f0f0;
+}
+
+/* Main CSS */
+#main{
+    display: flex;
+    flex-flow: row;
+    gap:25vw;
+
+    height: 100vh;
+
+    margin-top: 4%;
+
+    min-height: fit-content;
+
+}
+
+#main img{
+    width: 25vw;
+    height: 75vh;
+
+    transform: rotate(10deg);
+
+    border:10%,black;
+    border-style:dashed;
+
+}
+
+#text h1{
+    font-size: 6em;
+
+    position: relative;
+    top:20vh;
+    left:2vw;
+
+    color: #f1d00a;
+
+    font-family: Gloock;
+
+}
+
+#text h2{
+    font-size: 3em;
+
+    position: relative;
+    top:22vh;
+    left:2vw;
+
+    color: #f0f0f0;
+
+    font-family: Ubuntu;
+}
+
+/* Games */
+.gameText h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #f0f0f0;
+
+    font-family: Gloock;
+
+    font-size: 6em;
+}
+
+.row{
+    padding-left: 3vw;
+    margin-top: 2vh;
+}
+
+.card{
+    max-width: fit-content;
+}
+
+/* About Us */
+
+.aboutText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #f0f0f0;
+
+    font-family: Gloock;
+
+    font-size: 6em;
+
+    margin-top: 2vh;
+}
+.aboutContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.aboutContent h3{
+    color: #f0f0f0;
+}
+
+.card h5{
+    font-family: Gloock;
+}
+
+.card p{
+    font-family: Ubuntu;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+    margin-top: 2vh;
+    background-color: #21325e;
+
+    color: #f0f0f0;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 425px){
+	#main img{
+        display: none;
+    }
+    #main h1{
+        font-size: 2.5em;
+    }
+
+    #main h2{
+        font-size: 1.5em;
+    }
+
+    .gameText h1{
+        font-size: 2.5em;
+    }
+
+    .aboutText{
+        font-size: 2.5em;
+    }
+
+    .aboutContent{
+        flex-flow: column;
+    }
+
+    .card{
+        max-width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #main img{
+        display: none;
+    }
+    #main h1{
+        font-size: 3.5em;
+    }
+
+    #main h2{
+        font-size: 2.5em;
+    }
+
+    .gameText h1{
+        font-size: 3.5em;
+    }
+
+    .aboutText{
+        font-size: 2.5em;
+    }
+
+    .aboutContent{
+        flex-flow: column;
+    }
+
+    .card{
+        max-width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #main{
+        gap: 15%;
+    }
+    #main h1{
+        font-size: 3.5em;
+    }
+
+    #main h2{
+        font-size: 2.5em;
+    }
+
+    .gameText h1{
+        font-size: 2.5em;
+    }
+
+    .aboutText{
+        font-size: 2.5em;
+    }
+
+    .aboutContent{
+        flex-flow: column;
+    }
+
+    .card{
+        max-width: fit-content;
+    }
+
+    .row{
+        padding-left: 1%;
+    }
+}
