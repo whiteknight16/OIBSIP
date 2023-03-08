@@ -68,6 +68,12 @@ nav{
 }
 
 /* Games */
+#game{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
 .gameText h1{
     display: flex;
     align-items: center;
@@ -90,6 +96,9 @@ nav{
     max-width: fit-content;
     background-color: #21325e;
     color: #f0f0f0;
+
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* About Us */
