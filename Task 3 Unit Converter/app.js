@@ -26,7 +26,7 @@ document.querySelector("#convert").addEventListener("click", (event) => {
             document.querySelector(".convertedTemp").innerText = outputValue.toFixed(3) + " Fahrenheit"
         }
         else if (outputUnit === "k") {
-            let outputValue = (inputValue - 32) * 5 / 9 + 273.15
+            let outputValue = (inputValue*12.22 - 32) * (5 / 9) + 273.15
             document.querySelector(".convertedTemp").innerText = outputValue.toFixed(3) + " Kelvin"
         }
         else {
