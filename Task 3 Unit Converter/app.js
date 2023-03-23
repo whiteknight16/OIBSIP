@@ -1,7 +1,7 @@
 document.querySelector("#convert").addEventListener("click", (event) => {
     let inputUnit = document.querySelector('#ip').value;
     let outputUnit = document.querySelector('#op').value;
-    let inputValue = parseInt(document.querySelector(".inputTemp").value);
+    let inputValue = parseFloat(document.querySelector(".inputTemp").value);
     if (isNaN(inputValue)) {
         
     }
